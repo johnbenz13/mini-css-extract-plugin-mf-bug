@@ -11,7 +11,7 @@ module.exports = {
       new ModuleFederationPlugin({
         name: 'main-app',
         filename: 'module-federation.json',
-        shared: ["@john/shared-app"],
+        shared: {'@john/shared-app': { import: '../shared-app/src/index' }},
       }),
     ],
   module: {
@@ -25,5 +25,6 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
 };
