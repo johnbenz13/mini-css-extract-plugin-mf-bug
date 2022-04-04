@@ -5,11 +5,13 @@ const { ModuleFederationPlugin } = require('webpack').container;
 
 module.exports = {
   entry: './src/index.js',
-  mode: 'production',
+  mode: 'development',
   plugins: [
       new MiniCssExtractPlugin(),
       new ModuleFederationPlugin({
         name: 'main-app',
+        filename: 'module-federation.json',
+        shared: ["@john/shared-app"],
       }),
     ],
   module: {
@@ -21,7 +23,7 @@ module.exports = {
     ],
   },
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };

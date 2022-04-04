@@ -1,7 +1,8 @@
 {
-    "name": "shared-app",
+    "name": "@john/shared-app",
     "version": "1.0.0",
     "license": "UNLICENSED",
+    "main": "dist/main.js",
     "private": true,
     "author": {
         "name": "Jonathan Bensaid",

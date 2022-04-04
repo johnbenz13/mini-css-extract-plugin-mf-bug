@@ -1,8 +1,9 @@
 {
-  "name": "main-app",
+  "name": "@john/main-app",
   "version": "1.0.0",
   "license": "UNLICENSED",
   "private": true,
+  "main": "dist/main.js",
   "author": {
     "name": "Jonathan Bensaid",
     "email": "jonathanbe@wix.com"
@@ -15,5 +16,8 @@
     "mini-css-extract-plugin": "^2.6.0",
     "webpack": "^5.71.0",
     "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+      "@john/shared-app": "^1.0.0"
   }
 }
