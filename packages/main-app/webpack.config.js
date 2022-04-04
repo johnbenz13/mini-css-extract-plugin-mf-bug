@@ -1,10 +1,17 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { ModuleFederationPlugin } = require('webpack').container;
+
 
 module.exports = {
   entry: './src/index.js',
   mode: 'production',
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [
+      new MiniCssExtractPlugin(),
+      new ModuleFederationPlugin({
+        name: 'main-app',
+      }),
+    ],
   module: {
     rules: [
       {

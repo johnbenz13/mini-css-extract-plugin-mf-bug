@@ -4,7 +4,15 @@
     "license": "UNLICENSED",
     "private": true,
     "author": {
-      "name": "Jonathan Bensaid",
-      "email": "jonathanbe@wix.com"
+        "name": "Jonathan Bensaid",
+        "email": "jonathanbe@wix.com"
+    },
+    "scripts": {
+      "build": "webpack"
+    },
+    "devDependencies": {
+        "css-loader": "^6.7.1",
+        "webpack": "^5.71.0",
+        "webpack-cli": "^4.9.2"
     }
 }
