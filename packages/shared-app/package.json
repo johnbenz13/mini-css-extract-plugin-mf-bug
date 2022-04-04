@@ -1,0 +1,10 @@
+{
+    "name": "shared-app",
+    "version": "1.0.0",
+    "license": "UNLICENSED",
+    "private": true,
+    "author": {
+      "name": "Jonathan Bensaid",
+      "email": "jonathanbe@wix.com"
+    }
+}

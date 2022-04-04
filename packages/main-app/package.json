@@ -1,0 +1,14 @@
+{
+  "name": "main-app",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "Jonathan Bensaid",
+    "email": "jonathanbe@wix.com"
+  },
+  "devDependencies": {
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

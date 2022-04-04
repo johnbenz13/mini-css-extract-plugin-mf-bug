@@ -1,0 +1,9 @@
+{
+    "name": "mini-css-extract-plugin-mf-bug",
+    "private": true,
+    "workspaces": {
+      "packages": [
+        "packages/*"
+      ]
+    }
+  }
