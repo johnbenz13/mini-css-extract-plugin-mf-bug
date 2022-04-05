@@ -7,11 +7,11 @@ module.exports = {
   entry: './src/index.js',
   mode: 'development',
   plugins: [
-      new MiniCssExtractPlugin(),
+      new MiniCssExtractPlugin({experimentalUseImportModule: false}),
       new ModuleFederationPlugin({
         name: 'main-app',
         filename: 'module-federation.json',
-        shared: {'@john/shared-app': { import: '../shared-app/src/index' }},
+        shared: {'@john/shared-app': { import: '../shared-app/src/index.js' }},
       }),
     ],
   module: {

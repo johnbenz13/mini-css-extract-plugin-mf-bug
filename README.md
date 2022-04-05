@@ -2,7 +2,7 @@
 
 Try to reproduce the Bug with MF and Mini CSS Extract Plugin
 
-## 1. Installation
+## 1. Steps to reproduce
 
 ```bash
 npx midgard-yarn
@@ -11,3 +11,5 @@ yarn build
 cd ../main-app
 yarn build
 ```
+
+It will enter an infinite loop
